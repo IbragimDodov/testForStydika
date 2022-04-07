@@ -1,0 +1,242 @@
+@import '../../node_modules/scss-reset/src/scss/_reset.scss'
+
+body,
+a
+  font-family: 'Open Sans', sans-serif
+
+// @font-face
+//   font-family: Openans
+//   src: url("./fonts/Opensans.woff") format("woff")
+//   src: url("./fonts/Opensans.woff2") format("woff2")
+//   src: url("./fonts/Opensans.ttf")
+//   font-style: normal
+//   font-weight: normal
+
+@font-face
+  font-family: Formular
+  src: url("./fonts/Formular.woff") format("woff")
+  src: url("./fonts/Formular.woff2") format("woff2")
+  src: url("./fonts/Formular.ttf")
+  font-style: normal
+  font-weight: normal
+
+// @font-face
+//   font-family: FontAwesome
+//   src: url("/fonts/fontawesome-webfont.woff") format("woff")
+//   src: url("/fonts/fontawesome-webfont.woff2") format("woff2")
+//   src: url("/fonts/fontawesome-webfont.eot")
+//   src: url("/fonts/fontawesome-webfont.svg")
+//   src: url("/fonts/fontawesome-webfont.ttf")
+//   src: url("/fonts/FontAwesome.otf")
+//   font-style: normal
+//   font-weight: normal
+
+.header
+  background-color: #fff
+  padding: 15px 0
+  border-bottom: 1px solid #d8d8d8
+  position: relative
+  color: #222222
+
+.container
+  width: 1216px
+  margin: 0 auto
+
+.header__top
+  margin-bottom: 26.5px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.header__logo-block
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex: 0 0 auto
+  width: 25%
+
+.pc-city-container
+  display: flex
+  align-items: center
+  justify-content: flex start
+
+  svg
+    margin-left: 16px
+    margin-right: 8px
+
+.header-search
+  width: 592px
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  input
+    background: #f1f1f1
+    border-radius: 100px
+    height: 48px
+    font-size: 14px
+    width: 100%
+    padding: 0 40px
+    border: 2px solid #f1f1f1
+
+.header-search__icon
+  color: #a7a7a7
+  font-size: 19px
+  position: absolute
+  left: 15px
+  top: 50%
+  transform: translateY(-50%)
+
+.header-favorite-block
+  display: flex
+  align-items: center
+  justify-content: center
+  a
+    color: #222222
+    text-decoration: none
+    display: flex
+    align-items: center
+    justify-content: center
+    span
+      margin-left: 8.5px
+
+.user-link
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  font-size: 14px
+  line-height: 22px
+  color: #222222
+
+.user-block__img
+  margin-left: 7px
+
+.main-menu
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  a
+    text-decoration: none
+    color: #222222
+
+.breadcrumb-container
+  margin-top: 32px
+  margin-bottom: 29px
+
+.breadcrumb-wrapper
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+.breadcrumb-item
+  position: relative
+  padding-right: 36px
+  a
+    font-size: 12px
+    line-height: 20px
+    color: #767676
+    text-decoration: none
+
+.breadcrumb-item:after
+  position: absolute
+  content: url("../img/next-arrow.svg")
+  width: 6px
+  height: 12px
+  color: #767676
+  top: 3px
+  right: 15px
+
+.breadcrumb-item:last-child::after
+  content: ''
+
+.main__banner-top-info
+  background: url("../img/main-bg.jpg")
+  background-repeat: no-repeat
+  background-size: 100% auto
+
+.btn
+  font-family: Formular
+  font-style: normal
+  font-weight: 500
+  font-size: 10px
+  line-height: 16px
+  padding: 16px 24px
+  background: #DFE9F5
+  border-radius: 5px
+  letter-spacing: 2px
+  text-transform: uppercase
+  color: #0656B4
+  border: none
+  &:hover
+    color: #ffffff
+    background: #0656B4
+
+.main__banner-top-info-button-block
+  padding-top: 210px
+  padding-left: 742px
+  padding-bottom: 24px
+
+.main__banner-top-info-img
+  margin-left: 31px
+  margin-top: 28px
+
+.main__banner-bottom-info
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.main__banner-title
+  font-family: Formular
+  font-style: normal
+  font-weight: 500
+  font-size: 31px
+  line-height: 36px
+  color: #222222
+  width: 800px
+  margin-top: 24px
+  margin-bottom: 6px
+
+.main__banner-info
+  font-family: 'Formular'
+  font-style: normal
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  color: #767676
+  a
+    text-decoration: none
+    color: #767676
+
+.main__banner-bottom-info-favorite-wrapper
+  position: relative
+  width: 100%
+
+.main__banner-bottom-info-favorite
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  top: -33px
+  right: 35px
+
+button
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 22px
+  color: #222222
+  padding: 9px 16px 9px 40px
+  background: #FFFFFF
+  border: 1px solid #D8D8D8
+  border-radius: 49px
+
+.main__banner-bottom-info-favorite-img
+  position: absolute
+  top: 15px
+  left: 16px
+
+.favorite-img
+  margin-left: 15px
